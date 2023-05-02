@@ -1,0 +1,39 @@
+<!-- <div class="c0l-md-8 offset-md-3"> -->
+  <app-admin-page></app-admin-page>
+<div>
+  <h3 class="text">Update Course Details</h3>
+  <form [formGroup]="userform" (ngSubmit)="getUserFormData(userform.value)">
+    <br />
+    <label for="">enter course_id</label> <br>
+    <input
+      type="text"
+      formControlName="courseId"
+      placeholder="enter CourseId"
+    />
+    <br />
+    <label for="">enter course_name</label> <br>
+    <input
+      type="text"
+      formControlName="courseName"
+      placeholder="enter CourseName"
+    />
+    <br />
+    <label for="">enter course_duration</label> <br>
+    <input
+      type="text"
+      formControlName="courseDuration"
+      placeholder="enter CourseDuration"
+    />
+    <br />
+    <label for="">enter course_fees</label> <br>
+    <input
+      type="text"
+      formControlName="courseFees"
+      placeholder="enter CourseFees"
+    />
+    <br />
+
+    <br />
+    <button>Submit</button>
+  </form>
+</div>

@@ -1,0 +1,53 @@
+form {
+  width: 80%;
+  margin-left: 120px;
+  margin-top: 2%; 
+  box-shadow: 1px 1px 24px 4px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 1px 1px 24px 4px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 1px 1px 24px 4px rgba(0, 0, 0, 0.58);
+  position: absolute;
+  top: 0.1%;
+}
+select{
+  margin-left: 10%;
+}
+.error{
+  border: 1px solid red;
+}
+.role{
+  margin-left: 6.5em;
+}
+.dropDown{
+  width: 12em;
+}
+.register {
+  margin-left: 10%;
+}
+input,
+.btn {
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.member {
+  margin-left: 80%;
+  height: 50px;
+  color: aliceblue;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #0A4D68;
+  color: aliceblue;
+}
+input {
+  width: 30%;
+}
+.labelText{
+  margin-left: 10%;
+}

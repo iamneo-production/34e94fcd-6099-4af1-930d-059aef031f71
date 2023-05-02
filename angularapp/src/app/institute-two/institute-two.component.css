@@ -1,0 +1,36 @@
+
+.container{
+    size: 0;
+    margin-left: 60px;
+}
+.details{
+    /* border: 1px solid red; */
+    /* margin-top: 10px; */
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 42%;
+}
+.container{
+    width: 10%;
+    border-radius: 20px;
+    /* margin-left: 80%; */
+    position: absolute;
+    top: 17%;
+    right: 5%;
+}
+.table{
+    /* border: 1px solid red; */
+    /* margin-left: 5%; */
+    /* margin-top: 20px; */
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+th{
+    background-color: crimson;
+}
+td{
+    background-color: darkgrey;
+}

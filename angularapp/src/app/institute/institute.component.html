@@ -1,0 +1,20 @@
+<app-home></app-home>
+<marquee class="marquee" >
+    Welcome to our website."Live as if you were to die tomorrow. Learn as if you were to live forever.”
+     </marquee>
+   <table id="Tables">
+     <tr>
+       <th >Id</th>
+       <th >Name</th>
+       <th>Location</th>
+       <th>Contact</th>
+       <th>Email</th> 
+   <tr *ngFor="let i of users">
+       <td>{{i.instituteId}}</td>
+       <td>{{i.instituteName}}</td>
+       <td>{{i.instituteLocation}}</td>
+       <td>{{i.phoneNumber}}</td>
+       <td>{{i.email}}</td>
+   
+   </tr>
+   </table>

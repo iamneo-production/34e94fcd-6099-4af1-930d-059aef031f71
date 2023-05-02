@@ -1,0 +1,22 @@
+/* div{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 300px;
+} */
+.textDetails{
+    position: absolute;
+    top: 10%;
+    /* text-align: center; */
+    left: 42%;
+}
+form{
+    /* border: 1px solid red; */
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+label,input[type="text"],button{
+   margin-left: 10%; 
+   font-weight: 40%;
+}

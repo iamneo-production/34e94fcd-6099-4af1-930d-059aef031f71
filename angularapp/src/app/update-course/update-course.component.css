@@ -1,0 +1,22 @@
+
+input[type=text],label{
+    border-radius: 10px;
+    margin-left: 10em;
+}
+button{
+    border-radius: 10px;
+    margin-left: 13em;
+}
+.text{
+    position: absolute;
+    top: 10%;
+    left: 17em;
+}
+form{
+    /* border: 1px solid red; */
+    width: 40%;
+    top: 20%;
+    position: absolute;
+    left: 23em;
+    background-color: #fafafa;
+}

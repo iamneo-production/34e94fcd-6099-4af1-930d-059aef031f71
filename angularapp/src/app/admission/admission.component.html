@@ -1,0 +1,63 @@
+<app-home></app-home>
+<div class="addmimage">
+  <img
+    src="https://tse4.mm.bing.net/th/id/OIP.IHWXzA0WBq3Ua25nOJlRcAHaDd?pid=ImgDet&rs=1"
+  />
+</div>
+<div class="form">
+  <form [formGroup]="AddmissionForm" (ngSubmit)="admissionUser()">
+    <label for="StudentName">Student Name:</label><br />
+    <input
+      type="text"
+      placeholder="Enter your Name"
+      name="StudentName"
+      formControlName="studentName"
+    />
+    <br />
+    <label for="phoneNumber">Contact No:</label><br />
+    <input
+      type="tel "
+      placeholder="Enter your Number"
+      name="phoneNumber"
+      formControlName="phoneNumber"
+    />
+    <br />
+    <label for="email">E-mail</label><br />
+    <input
+      type="email"
+      placeholder="Enter your email"
+      name="email"
+      formControlName="email"
+    />
+    <br />
+    <label for="Age">Age</label><br />
+    <input
+      type="text"
+      placeholder="Enter your age"
+      name="Age"
+      formControlName="age"
+    />
+    <br />
+    <input type="radio" value="Male" formControlName="gender" />Male
+    <input type="radio" value="Female" formControlName="gender" />Female
+    <br />
+    <label for="InstituteName">Institution Name:</label><br />
+    <input
+      type="text"
+      placeholder="Enter Institute"
+      name="InstituteName"
+      formControlName="instituteName"
+    />
+    <br />
+    <label for="CourseName">Course Name:</label><br />
+    <input
+      type="text"
+      placeholder="Enter course"
+      name="CourseName"
+      formControlName="courseName"
+    />
+    <br />
+    <button class="btnOne">Enroll</button>
+    <button class="btnTwo" routerLink="/review">Review</button>
+  </form>
+</div>

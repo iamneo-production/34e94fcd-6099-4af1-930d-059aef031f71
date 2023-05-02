@@ -1,0 +1,39 @@
+<app-admin-page></app-admin-page>
+<div >
+  <h3 class="text">Update Institute Details</h3>
+  <form [formGroup]="userform" (ngSubmit)="getUserFormData(userform.value)">
+    <br />
+    <label for=""> enter institute</label> <br />
+    <input
+      type="text"
+      formControlName="instituteId"
+      placeholder="enter institute"
+    />
+    <br />
+    <label for=""> enter institute</label> <br />
+    <input
+      type="text"
+      formControlName="instituteName"
+      placeholder="enter instituteName"
+    />
+    <br />
+    <label for=""> enter institute</label> <br />
+    <input
+      type="text"
+      formControlName="instituteLocation"
+      placeholder="enter instituteLocation"
+    />
+    <br />
+    <label for=""> enter institute</label> <br />
+    <input
+      type="text"
+      formControlName="phoneNumber"
+      placeholder="enter phoneNumber"
+    />
+    <br />
+    <label for=""> enter institute</label> <br />
+    <input type="text" formControlName="email" placeholder="enter email" />
+    <br /><br />
+    <button>Submit</button>
+  </form>
+</div>

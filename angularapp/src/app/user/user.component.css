@@ -1,0 +1,66 @@
+.error {
+  color: red;
+}
+form {
+  border-radius: 2px;
+  width: 40%;
+  margin-left: 31%;
+  margin-top: 10%;
+  background-color: #fafafa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 4%;
+}
+form:hover{
+    box-shadow: -11px -2px 36px -12px rgba(159,211,199,1);
+-webkit-box-shadow: -11px -2px 36px -12px rgba(159,211,199,1);
+-moz-box-shadow: -11px -2px 36px -12px rgba(159,211,199,1);
+}
+.login {
+  text-align: center;
+  margin-top: 3%;
+}
+input[type="email"],
+input[type="password"],
+button {
+  margin-left: 24%;
+  margin-top: 20px;
+  height: 40px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: white;
+  font-size: 16px;
+}
+button {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid;
+  background-color: #9fd3c7;
+  height: 40px;
+}
+button:hover {
+  background-color: #385170;
+  color: white;
+}
+p {
+  margin-left: 61%;
+  margin-top: 10%;
+}
+a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+a:hover {
+  color: #fafafa;
+  border: 1px solid;
+  background-color: #9fd3c7;
+  border-radius: 10px;
+}
+.newUser {
+  font-size: 18px;
+}
+

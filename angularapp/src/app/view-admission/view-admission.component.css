@@ -1,0 +1,33 @@
+.errorMessage{
+    /* border: 1px solid red;
+    height: 20px; */
+    /* need correction */
+}
+.container{
+    margin-left: 60px;
+    width: 10%;
+    border-radius: 20px;
+    margin-left: 80%;
+}
+.details{
+    /* text-align: center; */
+    margin-top: 30px;
+    left: 40%;
+    position: absolute;
+    top: 5%;
+}
+.table{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+}
+table{
+    position: absolute;
+    top: 16%;
+}
+tr{
+    background-color: darkorange;
+}
+td{
+    background-color: seagreen;
+}

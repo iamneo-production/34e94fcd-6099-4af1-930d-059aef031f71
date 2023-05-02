@@ -1,0 +1,40 @@
+<app-admin-page></app-admin-page>
+<h3 class="textDetails">Add Course Details</h3>
+<div>
+  <form [formGroup]="AddCourseForm" (ngSubmit)="getUserForm()">
+    <br />
+    <label for="courseId">Course Id</label><br />
+    <input
+      type="text"
+      name="courseId"
+      placeholder="enter courseId"
+      formControlName="courseId"
+    /><br /><br />
+
+    <label for="courseName">Course Name</label><br />
+    <input
+      type="text"
+      name="courseName"
+      placeholder="enter courseName"
+      formControlName="courseName"
+    /><br /><br />
+
+    <label for="courseDuration">Course Duration</label><br />
+    <input
+      type="text"
+      name="courseDuration"
+      placeholder="enter courseDuration"
+      formControlName="courseDuration"
+    /><br /><br />
+
+    <label for="courseFees">Course Fees</label><br />
+    <input
+      type="text"
+      name="courseFees"
+      placeholder="enter course Fees"
+      formControlName="courseFees"
+    /><br /><br />
+
+    <button>submit</button>
+  </form>
+</div>

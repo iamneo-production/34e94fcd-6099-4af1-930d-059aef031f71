@@ -1,0 +1,28 @@
+#course {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  text-align: center;
+  border-color: black;
+  border-width: 3px;
+  color: black;
+  position: absolute;
+  top: 18%;
+  left: 24%;
+}
+
+td,
+th {
+  border: 2px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid black;
+}
+#course tr {
+  background-color: #ddd;
+  width: 20px;
+  border: 3px solid black;
+}
+
+#course th {
+  background-color: rgb(114, 218, 215);
+}

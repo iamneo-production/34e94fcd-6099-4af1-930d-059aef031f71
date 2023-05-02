@@ -1,0 +1,129 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <h4 class="register">Register Now</h4>
+  <label for="role" class="role">Choose a role:</label> <br>
+
+  <select class="dropDown" formControlName="role" id="role">
+    <option class="subRoal" value="user">user</option>
+    <option class="subRoal" value="admin">admin</option>
+  </select> <br> 
+  <label class="labelText" for="email">Enter email</label> <br>
+  <input 
+    type="email"
+    placeholder="enter email"
+    formControlName="email"
+    name="email"
+    [ngClass]="{
+      error: getControl('email')?.errors && getControl('email')?.touched
+    }"
+  />
+  <div class="errorMessage"
+    *ngIf="getControl('email')?.errors && getControl('email')?.touched"
+  >
+    <small
+      class="text-danger"
+      *ngIf="getControl('email')?.errors?.['required']"
+    >
+      email is required
+    </small>
+    <small
+      class="text-danger"
+      *ngIf="getControl('mobileNumber')?.errors?.['maxlength'] || getControl('mobileNumber')?.errors?.['minlength'] || getControl('mobileNumber')?.errors?.['pattern']"
+    >
+      please enter a valid email
+    </small>
+  </div>
+  <!-- end of email -->
+
+  <br />
+  <label class="labelText" for="email">Enter username</label> <br>
+  <input
+    type="text"
+    placeholder="enter username"
+    formControlName="username"
+    name="username"
+    [ngClass]="{
+      error: getControl('username')?.errors && getControl('username')?.touched
+    }"
+  />
+  <div
+    *ngIf="getControl('username')?.errors && getControl('username')?.touched"
+  >
+    <small
+      class="text-danger"
+      *ngIf="getControl('username')?.errors?.['required']"
+    >
+      user name is required
+    </small>
+  </div>
+  <br />
+
+  <!-- for mobile number  -->
+  <label class="labelText" for="email">Enter mobile number</label> <br>
+  <input
+    type="text"
+    name="mobileNumber"
+    id="mobileNumber"
+    placeholder="enter mobileNumber"
+    formControlName="mobileNumber"
+    [ngClass]="{
+      error:
+        getControl('mobileNumber')?.errors &&
+        getControl('mobileNumber')?.touched
+    }"
+  />
+  <div
+    *ngIf="
+      getControl('mobileNumber')?.errors && getControl('mobileNumber')?.touched
+    "
+  >
+    <small
+      class="text-danger"
+      *ngIf="getControl('mobileNumber')?.errors?.['required']"
+    >
+      mobile Number is required
+    </small>
+    <small
+      class="text-danger"
+      *ngIf="getControl('mobileNumber')?.errors?.['maxLength'] || getControl('mobileNumber')?.errors?.['minLength'] || getControl('mobileNumber')?.errors?.['pattern']"
+    >
+      please enter a valid mobile number
+    </small>
+  </div>
+  <!-- ending mobile number input -->
+  <br />
+  <label class="labelText" for="email">Enter password</label> <br>
+  <input
+    type="password"
+    name="password"
+    id="password"
+    placeholder="enter password"
+    formControlName="password"
+    [ngClass]="{
+      error: getControl('password')?.errors && getControl('password')?.touched
+    }"
+  />
+  <br />
+  <label class="labelText" for="email">Confirm your password</label> <br>
+  <input
+    type="password"
+    name="confirm_password"
+    id="confirm_password"
+    placeholder="confirm password"
+    formControlName="cnfPassword"
+    [ngClass]="{
+      error:
+        getControl('cnfPassword')?.errors && getControl('cnfPassword')?.touched
+    }"
+  />
+
+  <br />
+  <button
+    type="submit"
+    [disabled]="loginForm.invalid"
+    class="btn"
+    (click)="registerNow()"
+  >
+    submit
+  </button>
+  <p class="member">Already a user? <a routerLink="/user">login</a></p>
+</form>

@@ -1,0 +1,36 @@
+<app-admin-page></app-admin-page>
+<h2 class="details">Instutite Details</h2>
+<button class="container" routerLink="/addInstitute">Add Institute</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Intitute Id</th>
+      <th>Institute Name</th>
+      <th>Institute Location</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of institute">
+      <td>{{ i.instituteId }}</td>
+      <td>{{ i.instituteName }}</td>
+      <td>{{ i.instituteLocation }}</td>
+      <td>{{ i.phoneNumber }}</td>
+      <td>{{ i.email }}</td>
+      <td>
+        <button class="btn btn-info" (click)="updateInstitute(i)">
+          Update
+        </button>
+        <button
+          class="btn btn-danger"
+          style="margin-left: 10px"
+          (click)="deleteinstitute(i.instituteId)"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<app-home></app-home>
+<table id="course">
+  <tr>
+    <th>Course Id</th>
+    <th>Name</th>
+    <th>Duration</th>
+    <th>Fees</th>
+  </tr>
+
+  <tr *ngFor="let c of courses">
+    <td>{{ c.courseId }}</td>
+    <td>{{ c.courseName }}</td>
+    <td>{{ c.courseDuration }}</td>
+    <td>{{ c.courseFees }}</td>
+  </tr>
+</table>

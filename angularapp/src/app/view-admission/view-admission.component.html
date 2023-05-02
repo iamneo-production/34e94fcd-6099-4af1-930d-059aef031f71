@@ -1,0 +1,39 @@
+<app-home></app-home>
+<h2 class="details">View Admission</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Student Name</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Course Name</th>
+      <th>Institute Name</th>
+      <th>Age</th>
+      <th>gender</th>
+      <th>option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of view">
+      <td>{{ v.id }}</td>
+      <td>{{ v.studentName }}</td>
+      <td>{{ v.phoneNumber }}</td>
+      <td>{{ v.email }}</td>
+      <td>{{ v.courseName }}</td>
+      <td>{{ v.instituteName }}</td>
+      <td>{{ v.age }}</td>
+      <td>{{ v.gender }}</td>
+
+      <td>
+        <button
+          (click)="deleteadmission(v.id)"
+          class="btn btn-danger"
+          style="margin-left: 10px"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

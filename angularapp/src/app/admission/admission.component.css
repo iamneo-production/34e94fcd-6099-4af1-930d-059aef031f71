@@ -1,0 +1,49 @@
+.form {
+  text-align: center;
+  /* margin: auto; */
+  width: 400px;
+  background: #9fd3c7;
+  border: 1px solid black;
+  /* color: black solid; */
+  font-weight: 2px;
+  /* font-style: normal; */
+  margin-top: 30px;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+}
+.addmimage {
+  margin-top: 35px;
+}
+img {
+  height: 80px;
+  width: 400px;
+  position: absolute;
+  top: 10%;
+  right: 25em;
+}
+.btnOne {
+  /* margin-bottom: 50px; */
+  background-color: #385170;
+  color: aliceblue;
+  /* border: white; */
+  /* float: right; */
+  height: 40px;
+  width: 100px;
+  /* margin-top: 20px; */
+  /* margin-right: 1%; */
+  /* border: 1px solid red; */
+}
+.btnTwo{
+    margin-bottom: 30px;
+    background-color: #385170;
+    text-align: center;
+    /* border: white; */
+    /* margin-left: 30px; */
+    color: aliceblue;
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    margin-left: 35%;
+    /* border: 1px solid blue; */
+}

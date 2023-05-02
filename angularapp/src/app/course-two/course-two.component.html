@@ -1,0 +1,31 @@
+<app-admin-page></app-admin-page>
+<h2 class="details">Course Details</h2>
+<button class="container" routerLink="/addCourse">Add Course</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Course Id</th>
+      <th>Course Name</th>
+      <th>Course Duration</th>
+      <th>Course Fees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of course">
+      <td>{{ c.courseId }}</td>
+      <td>{{ c.courseName }}</td>
+      <td>{{ c.courseDuration }}</td>
+      <td>{{ c.courseFees }}</td>
+      <td>
+        <button class="btn btn-info" style="margin-right: 10%" (click)="updateCourse(c)">Update</button>
+        <button
+          (click)="deletecourse(c.courseId)"
+          class="btn btn-danger"
+          style="margin-left: 10%"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

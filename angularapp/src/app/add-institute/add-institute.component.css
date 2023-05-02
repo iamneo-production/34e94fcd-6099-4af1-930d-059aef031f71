@@ -1,0 +1,19 @@
+.outerBox{
+    /* text-align: center; */
+    /* margin-left: ; */
+    top: 10%;
+    position: absolute;
+    left: 40%;
+    background-color: #fafafa;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    /* margin-top: 100px; */
+    /* margin-right: 300px; */
+}
+.label,input[type="text"],button{
+margin-left: 20px;
+font-size: 20px;
+font-weight: 20%;
+border-radius: 10px;
+}
+
